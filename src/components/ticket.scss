@@ -1,0 +1,199 @@
+
+.ticket {
+  box-shadow: 0 1px 4px rgba(91, 137, 163, 0.25);
+  border-radius: 5px;
+  background-color: #ffffff;
+  display: table-row;
+
+  @media (max-width: 570px) {
+    & {
+      width: 100%;
+      display: flex;
+      flex-direction: column-reverse;
+    }
+  }
+}
+
+.ticket__left {
+  padding: 25px 20px;
+  text-align: center;
+  min-width: 200px;
+  width: 200px;
+  border: 1px solid #eceff1;
+  border-bottom-left-radius: 5px;
+  border-top-left-radius: 5px;
+  display: table-cell;
+  vertical-align: top;
+
+  @media (max-width: 570px) {
+    & {
+      display: block;
+      width: 100%;
+      border-top: none;
+      padding: 10px 15px 20px;
+      border-radius: 0 0 5px 5px;
+    }
+  }
+}
+
+.ticket__company-logo {
+  img {
+    max-width: 120px;
+    min-height: 43px;
+  }
+
+  @media (max-width: 570px) {
+    & {
+      float: right;
+      max-width: 40%;
+      padding-top: 10px;
+      img {
+        max-width: 100%;
+        min-height: auto;
+        max-height: 43px;
+      }
+    }
+  }
+}
+
+.ticket__buy-btn {
+  box-shadow: 0 2px 1px rgba(0, 0, 0, 0.1), 0 1px 0 #d54d08;
+  border-radius: 5px;
+  background-color: #ff6c00;
+  display: inline-block;
+  width: 100%;
+  padding: 6px;
+  color: #ffffff;
+  font-size: 16px;
+  font-weight: 600;
+  cursor: pointer;
+  &:hover {
+    box-shadow: 0 1px 5px rgba(0, 0, 0, 0.25), 0 1px 0 #f6661c;
+    background-color: #ff8123;
+  }
+
+  @media (max-width: 570px) {
+    & {
+      float: left;
+      width: 50%;
+    }
+  }
+}
+
+.ticket__currency-symbol {
+  font-weight: 400;
+  padding-left: 2px;
+  display: inline-block;
+}
+
+.ticket__right {
+  padding: 25px;
+  display: table-cell;
+  width: 100%;
+  border: 1px solid #eceff1;
+  border-left: none;
+  border-bottom-right-radius: 5px;
+  border-top-right-radius: 5px;
+  vertical-align: top;
+
+  @media (max-width: 570px) {
+    & {
+      display: block;
+      width: 100%;
+      border-left: 1px solid #eceff1;
+      padding: 20px 15px 10px;
+      border-radius: 5px 5px 0 0;
+
+    }
+  }
+}
+
+
+.ticket__time-wrapper {
+  width: 100%;
+  display: table;
+  margin-bottom: 10px;
+}
+
+.ticket__time {
+  display: table-cell;
+  min-width: 85px;
+  color: #4a4a4a;
+  font-size: 32px;
+  line-height: 26px;
+}
+
+.ticket__time_arrival{
+  text-align: right;
+}
+
+.ticket__stops{
+  display: table-cell;
+  width: 100%;
+  padding: 0 20px;
+  vertical-align: top;
+}
+
+.ticket__stops-text{
+  color: #8b9497;
+  font-size: 10px;
+  font-weight: 600;
+  line-height: 12.1px;
+  text-align: center;
+  text-transform: uppercase;
+
+  @media (max-width: 570px) {
+    & {
+      font-size: 9px;
+    }
+  }
+}
+
+.ticket__stops-line-wrapper{
+  position: relative;
+  padding-top: 6px;
+}
+
+.ticket__stops-line{
+  height: 1px;
+  background-color: #d2d5d6;
+  width: 100%;
+}
+
+.ticket__stops-airplane{
+  background-size: contain;
+  background: url('../assets/airplane.png') no-repeat center;
+  display: inline-block;
+  width: 13px;
+  height: 13px;
+  position: absolute;
+  right: 0;
+  top: 0;
+}
+
+
+
+.ticket__date-wrapper {
+  width: 100%;
+  display: table;
+}
+
+
+.ticket__date {
+  display: table-cell;
+  min-width: 50%;
+  color: #4a4a4a;
+  font-size: 12px;
+  line-height: 18px;
+  font-weight: 600;
+}
+
+.ticket__date_arrival{
+  text-align: right;
+}
+
+.ticket__date-mini {
+  color: #8b9497;
+  font-weight: 400;
+
+}
