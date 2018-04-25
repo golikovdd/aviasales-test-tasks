@@ -2,7 +2,7 @@
 
 This project is an implementation of the task described [here](https://github.com/KosyanMedia/test-tasks/blob/master/aviasales/README.md)
 
-Online demo: golikovdd.github.io
+Online demo: [https://golikovdd.github.io/](https://golikovdd.github.io/)
 
 Local demo:
 ```
